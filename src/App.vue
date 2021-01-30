@@ -25,10 +25,10 @@
 <!--      通过name来定义-->
       <li><router-link :to="{name:'home'}">主页</router-link></li>
       <li><router-link :to="{name:'greeting'}">问候snow</router-link></li>
-      <li><router-link :to="{name:'greeting'}">登录1</router-link></li>
-      <li><router-link :to="{name:'greeting'}">登录2</router-link></li>
-      <li><router-link :to="{name:'greeting'}">项目列表</router-link></li>
-      <li><router-link :to="{name:'greeting'}">项目列表2</router-link></li>
+      <li><router-link :to="{name:'login'}">登录1</router-link></li>
+      <li><router-link :to="{name:'login2'}">登录2</router-link></li>
+      <li><router-link :to="{name:'project_list'}">项目列表</router-link></li>
+      <li><router-link :to="{name:'project_list2'}">项目列表2</router-link></li>
 
 
     </ul>
