@@ -1,7 +1,7 @@
 <template>
     <div class="login">
 
-    <el-form :model="ruleForm" status-icon :rules="rules"
+    <el-form :model="ruleForm" status-icon
              ref="ruleForm" label-width="70px" class="demo-ruleForm" :label-position="labelPostion">
           <el-form-item label="用户名">
             <el-input type="text" v-model="ruleForm.username" autocomplete="off"></el-input>

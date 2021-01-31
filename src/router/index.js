@@ -57,7 +57,7 @@ const router = new VueRouter({
       children: [
         // an empty path will be treated as the default, e.g.
         // components rendered at /parent: Root -> Parent -> Default
-        {path: '', component: ProjectList},
+        // {path: '', component: ProjectList},
 
         //  不加/是在login2的基础上进行拼接
         {path: 'project_list2', component: ProjectListNew},

@@ -20,6 +20,37 @@
         <p v-if="age>=70">{{username}}，年龄超过70，回去锻炼身体吧</p>
         <p v-else-if="age>=18">{{username}}，年龄大于18岁，愉快玩耍</p>
         <p v-else>{{username}}，年龄小于于18岁，不可以进入</p>
+<!--        main.js中定义的全局组件，在各个子组件中可以随意调用-->
+        <hello-world>
+<!--            默认情况下，在子组件开始标签和借宿标签中间添加的内容会被忽略-->
+<!--            <p>这是Hello-World子组件内容！</p>-->
+<!--            在vue2.6之后版本-->
+<!--            <p>请小雪小姐姐来</p>-->
+            <p slot="part1">一起喵喵喵喵</p>
+
+<!--            在vue2.6之后版本-->
+            <template v-slot:part2>
+                <p>在你面前撒个娇</p>
+            </template>
+<!--            在vue2.6之后，v-slot可以缩写为#-->
+             <template #part3>
+                <p>在你面前撒个娇</p>
+            </template>
+
+<!--            在vue2.6之前版本-->
+            <p slot="part4" slot-scope="sope">
+                {{sope.user}}一起喵喵喵
+            </p>
+
+            <!--            在vue2.6之后版本-->
+            <template #part5="sope">
+                <p>{{sope.user}}:我的心脏蹦蹦跳</p>
+            </template>
+            <template #part6="{user}">
+                <p>{{user}}:迷恋上你的坏笑</p>
+            </template>
+
+        </hello-world>
 
 
 
